@@ -9,11 +9,9 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title animated fadeInUp">
-          {{ title }}
+          {{ title }} <span class="title-sub">{{ subtitle }}</span>
         </h1>
-        <h2 class="subtitle animated fadeInUp slower">
-          {{ subtitle }}
-        </h2>
+        <h2 class="subtitle animated fadeInUp slower" />
         <br />
         <div
           v-if="$slots.default"
@@ -54,7 +52,7 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
-  margin-top: 52px;
+  margin-top: 66px;
   background-size: cover !important;
   background-position: center;
   text-align: center;
@@ -152,6 +150,14 @@ export default {
   .under-subtitle,
   .under-subtitle strong {
     text-shadow: 1px 1px 2px white;
+  }
+}
+.hero .title {
+  margin: 0;
+  color: $primary;
+
+  .title-sub {
+    color: $pink;
   }
 }
 </style>

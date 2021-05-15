@@ -6,13 +6,7 @@
   >
     <div class="navbar-brand">
       <nuxt-link class="navbar-item" to="/">
-        <site-logo v-if="$siteConfig.logo === 'logo-component'" />
-        <img
-          v-else
-          :src="$siteConfig.logo"
-          :alt="$siteConfig.siteName"
-          class="logo"
-        />
+        <img class="logo" :src="$siteConfig.logo" :alt="$siteConfig.siteName" />
       </nuxt-link>
       <hamburger-button @click="active = !active" />
     </div>
@@ -61,7 +55,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .navbar-item img {
-  max-height: 2rem;
+  max-height: 4rem;
 }
 .site-search-wrapper {
   transform: translateX(5px);

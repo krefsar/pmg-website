@@ -10,35 +10,26 @@ import theCMS from '../cms/netlify/cms'
  */
 export default {
   siteName: 'Party Moose Games',
-  tagline: 'We\'re Making Games We Love',
-  featureImage: '/uploads/home-hero.jpg',
-  logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
+  tagline: "We're Making Games We",
+  taglineSubtitle: 'Love',
+  featureImage: '/uploads/home-hero.png',
+  logo: '/pmglogo.png', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
     on: true,
     id: process.env.GOOGLE_ANALYTICS_ID
   },
   mainMenu: [
     {
-      name: 'About',
-      link: '/about'
+      name: 'Our Games',
+      link: '#our-games'
+    },
+    {
+      name: 'About Us',
+      link: '#about-us'
     },
     {
       name: 'Contact',
-      link: '/contact'
-    },
-    {
-      name: 'Categories',
-      link: '/categories'
-    },
-    {
-      name: 'Github Repo',
-      link: 'https://github.com/danielkellyio/awake-template',
-      target: '_blank'
-    },
-    {
-      name: 'Awake+ Premium',
-      link: 'https://awake-premium-lp.netlify.com/',
-      target: '_blank'
+      link: '#contact'
     }
   ],
   hero: {

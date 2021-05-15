@@ -33,8 +33,8 @@ export const actions = {
 
 function setOtherPageData(commit, siteConfig) {
   commit('set', {
-    title: siteConfig.siteName,
-    subtitle: siteConfig.tagline,
+    title: siteConfig.tagline,
+    subtitle: siteConfig.taglineSubtitle,
     featureImage: siteConfig.featureImage
   })
 }
